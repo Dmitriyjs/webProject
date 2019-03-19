@@ -1,0 +1,27 @@
+-------------------------------------------
+	Php -a 
+	#disable interactive mode 
++	(Ctrl - Z)
+-------------------------------------------
+	~ sudo atom
+	#/var has 'other' write 40777
++	(restart pc)
+--------------------------------------------
+	#open prj in Gitkraken /var
++	(install nonsnap)
+--------------------------------------------
+	prepare git
++
+--------------------------------------------
+	code conventions
+
+------
+	sudo ufw
+
+------
+	set nginx default
+
+-
+	switch web servers terminal
+
+------
