@@ -1,11 +1,36 @@
-<!--test index.html-->
+<?php require_once "php/point.php" ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>WorkPrj</title>
   </head>
   <body>
     <h1>Eeeboy</h1>
+    <h2>1</h2>
+    <h2> <?php
+      echo 1+1;
+      ?>
+    </h2>
+    <h2>Сгенерировано случайное число (0 - 100): <?php echo mt_rand(0, 100);?></h2>
+    <h2><?php
+              $varFloat = 42.43752;
+              $varRound = round($varFloat, 2);
+              echo "$varRound";
+     ?></h2>
+     <h3><?php
+              $point1 = new Point();
+              $point2 = new Point();
+              $point1->x = 3;
+              $point1->y = 5;
+              $point1->z = 1;
+              $point2->x = 5;
+              $point2->y = 5;
+              $point2->z = 2;
+              $mathOperation = ($point2->x - $point1->x)*($point2->x - $point1->x)+($point2->y - $point1->y)*($point2->y - $point1->y)+
+                                ($point2->z - $point1->z)*($point2->z - $point1->z);
+              $distance = sqrt($mathOperation);
+              echo "$distance";
+      ?></h3>
   </body>
 </html>
