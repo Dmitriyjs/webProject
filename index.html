@@ -34,6 +34,12 @@
       ?></h3>
 <?php require_once "php/work.php" ?>
       <p><?php echo $str; ?></p>
+      <form action="php/post.php" method="post">
+        Введите имя: <input type="text" name="name" value="">
+        <br>
+        <button type="submit">Скажи привет</button>
+      </form>
+
 
   </body>
 </html>
