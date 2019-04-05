@@ -3,6 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
     <title>WorkPrj</title>
   </head>
   <body>
@@ -33,13 +34,15 @@
               echo "$distance";
       ?></h3>
 <?php require_once "php/work.php" ?>
-      <p><?php echo $str; ?></p>
+      <p><?php //echo $str; ?></p>
       <form action="php/post.php" method="post">
         Введите имя: <input type="text" name="name" value="">
         <br>
         <button type="submit">Скажи привет</button>
       </form>
-
+    <div class="newAchieve">
+        <img src="img/newAch.jpg">
+    </div>
 
   </body>
 </html>
